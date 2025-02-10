@@ -19,6 +19,7 @@ int main() //os parênteses significa uma função; int main é uma função principal
 		printf("\t1 - Registro de nomes\n"); //\t: "dentar" ou criar espaços.
 		printf("\t2 - Consultar nomes\n");
 		printf("\t3 - Deletar nomes\n");
+		printf("\t4 - Sair do sistema\n");
 		printf("\nDigite a opção: "); //fim do menu
 	
 		scanf("%d", &opcao); //aguarda a opção do usuário; a atribuição %d serve pra alocar a opção do usuário na variável int opcao=0	
@@ -37,6 +38,11 @@ int main() //os parênteses significa uma função; int main é uma função principal
 			
 			case 3:
 			deletar();
+			break;
+			
+			case 4:
+			printf("\nObrigado por utilizar o sistema. Até a próxima!\n");
+			return 0;
 			break;
 			
 			default:
